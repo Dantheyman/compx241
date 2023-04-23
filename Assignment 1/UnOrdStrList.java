@@ -77,7 +77,7 @@ class UnOrdStrList
     // the node after it 
     public void remove(String s)
     {
-        if (head.key==s)
+        if (head.key.equals(s))
         {
             head=head.next;
             length-=1;

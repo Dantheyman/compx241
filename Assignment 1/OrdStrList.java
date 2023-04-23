@@ -107,7 +107,7 @@ public class OrdStrList
     // the node after it 
     public void remove(String s)
     {
-        if (head.key==s)
+        if (head.key.equals(s))
         {
             head=head.next;
             length-=1;
@@ -115,7 +115,7 @@ public class OrdStrList
         }
         StrNode next = head.next;
         StrNode prev = head;
-         while(!(next==null))
+        while(!(next==null))
         {
          
             if (next.key.equals(s))
